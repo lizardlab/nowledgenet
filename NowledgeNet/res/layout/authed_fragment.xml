@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical" >
+    <TextView
+        android:id="@+id/text_tech"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tech"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio_expertTech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="confidenceSelected"
+            android:text="@string/expert" />
+
+        <RadioButton
+            android:id="@+id/radio_okayTech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="confidenceSelected"
+            android:text="@string/okay" />
+
+        <RadioButton
+            android:id="@+id/radio_helpTech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="confidenceSelected"
+            android:text="@string/help" />
+
+        <RadioButton
+            android:id="@+id/radio_tutorTech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="confidenceSelected"
+            android:text="@string/tutor" />
+    </RadioGroup>
+        <TextView
+            android:id="@+id/category"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:text="@string/category"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/techCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/catSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/security" />
+
+            <RadioButton
+                android:id="@+id/catSoftware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/software" />
+
+            <RadioButton
+                android:id="@+id/catHardware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/hardware" />
+
+            <RadioButton
+                android:id="@+id/catNetwork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/network" />
+
+            <RadioButton
+                android:id="@+id/catServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/server" />
+
+            <RadioButton
+                android:id="@+id/catSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/sites" />
+
+            <RadioButton
+                android:id="@+id/catAV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="categorySelected"
+                android:text="@string/a_v" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/difficulty"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:text="@string/difficulty"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RadioGroup
+            android:id="@+id/radioDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_easy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|start"
+                android:onClick="difficultySelected"
+                android:text="@string/easy" />
+
+            <RadioButton
+                android:id="@+id/radio_med"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="difficultySelected"
+                android:text="@string/med" />
+
+            <RadioButton
+                android:id="@+id/radio_hard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="difficultySelected"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="postHelp"
+            android:text="@string/post" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/lgTitle"
+            android:onClick="logOut"
+            android:text="@string/logout" />
+        <!-- android:onClick="facebookLogout" -->
+        
+    </LinearLayout>
+
+</ScrollView>

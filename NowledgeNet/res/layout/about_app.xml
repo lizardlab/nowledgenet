@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:onClick="bringBaan"
+        android:src="@drawable/logo_opal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bigtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutthisapp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/lgTitle" />
+
+    <TextView
+        android:id="@+id/as_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createdby"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/mdTitle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <Button
+        android:id="@+id/btnOPAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="visitOPAL"
+        android:text="@string/OPALsite" />
+
+    <Button
+        android:id="@+id/btnDynPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="visitDynPro"
+        android:text="@string/visitdynpro" />
+
+    <Button
+        android:id="@+id/btnInnovation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="visitInnovation"
+        android:text="@string/visitinnovation" />
+
+</LinearLayout>
+</ScrollView>
